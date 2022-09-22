@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 51px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 62px;
+  border-radius: 100px;
+  border: 1px solid #2945FF;
+  text-decoration: none;
+}
+
+.image-decor {
+  position: relative;
+  padding: 35px 0 0 55px;
+}
+.image-decor::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../images/dots.svg");
+  z-index: -1;
+}
+
+.section-header .section-name {
+  font-size: 24px;
+  color: #2945FF;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+.section-header .section-title {
+  max-width: 400px;
+}
+
+.reviews {
+  position: relative;
+}
+.reviews .reviews__slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-left: 10.5%;
+}
+.reviews .reviews__slider .reviews__slider-item-wrap {
+  padding: 0 16px;
+}
+.reviews .reviews__slider .reviews__slider-item {
+  background: #fff;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid rgba(219, 179, 120, 0.4);
+}
+.reviews .reviews__slider .reviews__slider-item .reviews__slider-item-img {
+  height: 92px;
+  width: 95px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+.reviews .reviews__slider .reviews__slider-item .reviews__slider-item-img img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.reviews .reviews__slider .reviews__slider-item .reviews__slider-item-title {
+  margin-bottom: 10px;
+}
+.reviews .reviews__slider .reviews__slider-item .reviews__slider-item-subtitle {
+  color: #2945FF;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.reviews .reviews__slider .reviews__slider-item .reviews__slider-item-text {
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 300;
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.news {
+  padding: 45px 0;
+}
+.news .news__header {
+  text-align: center;
+}
+.news .news__header h3 {
+  margin-bottom: 25px;
+}
+.news .news__header .news__header-text {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.news .news__content {
+  padding-top: 100px;
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */
