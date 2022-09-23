@@ -99,7 +99,21 @@ h3 {
 
 // REVIEWS
 .reviews {
+  padding: 130px 0 100px;
   position: relative;
+  background-color: #FFF9EF;
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+    background-color: $white;
+    content: '';
+  }
 
   .reviews__slider {
     position: relative;
@@ -163,6 +177,7 @@ h3 {
 
 //NEWS
 .news {
+  background-color: $white;
   padding: 45px 0;
 
   .news__header {
@@ -194,6 +209,8 @@ h3 {
 
 //ACCORRDIONS
 .accordions {
+  padding-top: 30px;
+
   .accordion {
     padding: 30px 0;
     max-width: 430px;
@@ -207,6 +224,7 @@ h3 {
       height: 1px;
       bottom: 0;
     }
+
     &:first-child::after {
       position: absolute;
       content: '';
@@ -259,7 +277,7 @@ h3 {
       border: 1px solid #DBDBDB;
       content: '';
       background: url("../images/minus.svg");
-      background-color: #E5E5E5;
+      background-color: $white;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -272,3 +290,43 @@ h3 {
 
 }
 
+//STATS
+.stats {
+  padding: 150px 0 100px;
+  background-color: #f4f5ff;
+  position: relative;
+
+  &::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+    background-color: $white;
+    width: 100%;
+    height: 90px;
+  }
+
+  .stats__inner {
+    display: flex;
+    justify-content: space-between;
+
+    .stats__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .stats__item-num {
+        font-size: 70px;
+        font-weight: bold;
+      }
+
+      .stats__item-title {
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
