@@ -11,6 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  letter-spacing: -1px;
 }
 
 h2 {
@@ -20,6 +21,10 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+p {
+  letter-spacing: -0.3px;
 }
 
 .container {
@@ -148,7 +153,8 @@ h3 {
   font-style: italic;
   font-weight: 300;
   max-width: 350px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  line-height: 2;
 }
 
 .news {
@@ -159,14 +165,16 @@ h3 {
   text-align: center;
 }
 .news .news__header h3 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .news .news__header .news__header-text {
-  max-width: 720px;
+  max-width: 710px;
   margin: 0 auto;
+  line-height: 1.8;
+  font-size: 18px;
 }
 .news .news__content {
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
 }
 .news .news__content .news__content-image {
@@ -178,9 +186,10 @@ h3 {
 
 .accordions {
   padding-top: 30px;
+  padding-left: 10px;
 }
 .accordions .accordion {
-  padding: 30px 0;
+  padding: 35px 0;
   max-width: 430px;
   position: relative;
 }
@@ -201,7 +210,7 @@ h3 {
   top: 0;
 }
 .accordions .accordion .accordion__title {
-  padding-left: 75px;
+  padding-left: 70px;
   position: relative;
   cursor: pointer;
   font-size: 24px;
@@ -222,16 +231,18 @@ h3 {
   justify-content: center;
   align-items: center;
   border: 1px solid #2945FF;
+  top: 5px;
 }
 .accordions .accordion .accordion__content {
   padding-top: 20px;
   height: 0;
   transition: all 0.3s ease;
   display: none;
-  padding-left: 75px;
+  padding-left: 70px;
 }
 .accordions .accordion .accordion__content p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 .accordions .accordion.active .accordion__title::before {
   border: 1px solid #DBDBDB;
@@ -264,16 +275,23 @@ h3 {
 .stats .stats__inner {
   display: flex;
   justify-content: space-between;
+  padding-right: 20px;
 }
 .stats .stats__inner .stats__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 .stats .stats__inner .stats__item .stats__item-num {
+  padding-top: 20px;
   font-size: 70px;
   font-weight: bold;
+  line-height: 1;
+}
+.stats .stats__inner .stats__item .stats__item-num sup {
+  font-size: 35px;
 }
 .stats .stats__inner .stats__item .stats__item-title {
   color: #2945FF;
