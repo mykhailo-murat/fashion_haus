@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Fashion Haus</title>
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
 
@@ -24,12 +26,11 @@
         </div>
 
     </div>
-    <div class="reviews__slider slider" data-slider="itc-slider" data-loop="false" data-autoplay="false"
-         data-interval="7000">
-        <div class="reviews__slider-inner slider__wrapper">
-            <div class="slider__items">
+    <div class="reviews__slider ">
+        <div class="reviews__slider-inner swiper">
+            <div class="slider__items swiper-wrapper">
 
-                <div class="reviews__slider-item-wrap slider__item">
+                <div class="reviews__slider-item-wrap slider__item swiper-slide">
                     <div class="reviews__slider-item ">
                         <div class="reviews__slider-item-img">
                             <img src="assets/images/Profile%20Photo%201.jpg" alt="profilepic">
@@ -50,7 +51,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="reviews__slider-item-wrap slider__item">
+                <div class="reviews__slider-item-wrap slider__item swiper-slide">
                     <div class="reviews__slider-item ">
                         <div class="reviews__slider-item-img">
                             <img src="assets/images/Profile%20Photo%202.jpg" alt="profilepic">
@@ -70,7 +71,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="reviews__slider-item-wrap slider__item">
+                <div class="reviews__slider-item-wrap slider__item swiper-slide">
                     <div class="reviews__slider-item ">
                         <div class="reviews__slider-item-img">
                             <img src="assets/images/Profile%20Photo%203.jpg" alt="profilepic">
@@ -90,7 +91,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="reviews__slider-item-wrap slider__item">
+                <div class="reviews__slider-item-wrap slider__item swiper-slide">
                     <div class="reviews__slider-item ">
                         <div class="reviews__slider-item-img">
                             <img src="assets/images/Profile%20Photo%201.jpg" alt="profilepic">
@@ -236,8 +237,7 @@
 
 
 <script defer src="assets/scripts/main.js"></script>
-<script defer src="assets/scripts/slider.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </body>
 </html>

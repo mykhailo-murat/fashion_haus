@@ -109,7 +109,7 @@ p {
   max-width: 100%;
   overflow: hidden;
   margin-top: 70px;
-  margin-left: 10.5%;
+  margin-left: 9.5%;
 }
 .reviews .reviews__slider .reviews__slider-item-wrap {
   padding: 0 16px;
@@ -232,6 +232,12 @@ p {
   align-items: center;
   border: 1px solid #2945FF;
   top: 5px;
+  transition: all 0.3s ease;
+}
+.accordions .accordion .accordion__title:hover:before, .accordions .accordion .accordion__title:focus:before {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(41, 69, 255, 0.7);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(41, 69, 255, 0.7);
+  box-shadow: 0px 0px 15px 1px rgba(41, 69, 255, 0.7);
 }
 .accordions .accordion .accordion__content {
   padding-top: 20px;
@@ -251,6 +257,7 @@ p {
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: none;
 }
 .accordions .accordion.active .accordion__content {
   height: 100%;

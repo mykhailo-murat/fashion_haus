@@ -125,7 +125,7 @@ p {
     max-width: 100%;
     overflow: hidden;
     margin-top: 70px;
-    margin-left: 10.5%;
+    margin-left: 9.5%;
 
     .reviews__slider-item-wrap {
       padding: 0 16px;
@@ -266,6 +266,16 @@ p {
         align-items: center;
         border: 1px solid $blue;
         top: 5px;
+        transition: all .3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        &:before {
+          -webkit-box-shadow: 0px 0px 15px 1px transparentize($blue, .3);
+          -moz-box-shadow: 0px 0px 15px 1px transparentize($blue, .3);
+          box-shadow: 0px 0px 15px 1px transparentize($blue, .3);
+        }
       }
     }
 
@@ -291,6 +301,7 @@ p {
       background-color: $white;
       background-position: center;
       background-repeat: no-repeat;
+      box-shadow: none;
     }
 
     .accordion__content {
