@@ -12,5 +12,22 @@ document.querySelector('.accordions').addEventListener('click', function (e) {
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-    slidesPerView: 2.6
+    slidesPerView: 1,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1
+        },
+        // when window width is >= 425px
+        500: {
+            slidesPerView: 2
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 2.6
+        },
+        1920: {
+            slidesPerView: 4
+        },
+    },
 });

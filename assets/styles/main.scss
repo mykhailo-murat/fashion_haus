@@ -44,8 +44,21 @@ p {
   font-size: 18px;
   padding: 20px 62px;
   border-radius: 100px;
-  border: 1px solid $blue;
+  border: 1px solid transparent;
   text-decoration: none;
+  transition: all .3s ease;
+}
+
+.button-hollow {
+  border: 1px solid $blue;
+  color: $blue;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background: $blue;
+    color: $white;
+  }
 }
 
 .more-link {
@@ -79,6 +92,7 @@ p {
 .image-decor {
   position: relative;
   padding: 35px 0 0 55px;
+  z-index: 1;
 
   &::before {
     position: absolute;
@@ -207,6 +221,12 @@ p {
 
     .news__content-image {
       flex: 0 0 50%;
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+
     }
 
     .news__content-accordions {
@@ -358,5 +378,57 @@ p {
       }
     }
   }
+}
 
+@media screen and (max-width: 1024px) {
+  .reviews {
+    .reviews__slider {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    .news__content {
+      flex-direction: column;
+
+      .news__content-image {
+        flex: 0 0 100%;
+        margin: 0 auto;
+      }
+
+      .news__content-accordions {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .stats {
+    .stats__inner {
+      flex-wrap: wrap;
+
+      .stats__item {
+        flex: 0 0 50%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .accordions {
+    .accordion {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .stats {
+    .stats__inner {
+      .stats__item {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
