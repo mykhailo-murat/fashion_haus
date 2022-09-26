@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 2
         },
         // when window width is >= 640px
-        768: {
+        1024: {
             slidesPerView: 2.6
         },
         1920: {
